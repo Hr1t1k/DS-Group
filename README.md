@@ -1,6 +1,8 @@
 Live website Link: https://getlucky-f839f.web.app/
 
 Api Routes:
+
+
 | Route | Description | HTTP Method | Parameters | Protected |
 
 |---|---|---|---|---|
