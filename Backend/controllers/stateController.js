@@ -18,22 +18,6 @@ const addState = asyncHandler(async (req, res) => {
   }
 });
 
-const getStateByID = asyncHandler(async (req, res) => {
-  try {
-    const { id } = req.body;
-    // Check if the data is valid or not
-    if (!_id) {
-      res.status(400);
-      throw new Error("Please provide valid data");
-    }
-
-    const state = await State.findById(id);
-    res.status(200).json(state);
-  } catch (error) {
-    res.status(400).send(error.message);
-  }
-});
-
 const getAllState = asyncHandler(async (req, res) => {
   try {
     const state = await State.find();
@@ -43,4 +27,4 @@ const getAllState = asyncHandler(async (req, res) => {
   }
 });
 
-module.exports = { addState, getStateByID, getAllState };
+module.exports = { addState, getAllState };

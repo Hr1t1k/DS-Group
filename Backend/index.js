@@ -1,10 +1,10 @@
 const express = require("express");
 const path = require("path");
-const connectDB = require("../config/dbConfig");
-const userRoutes = require("../routes/userRoute");
-const stateRoutes = require("../routes/stateRoute");
-const giftRoutes = require("../routes/giftRoute");
-const giftTrackingRoutes = require("../routes/giftTrackingRoute");
+const connectDB = require("./config/dbConfig");
+const userRoutes = require("./routes/userRoute");
+const stateRoutes = require("./routes/stateRoute");
+const giftRoutes = require("./routes/giftRoute");
+const giftTrackingRoutes = require("./routes/giftTrackingRoute");
 const { onRequest } = require("firebase-functions/v2/https");
 
 const cors = require("cors");
@@ -24,7 +24,9 @@ const PORT = 8000;
 app.get("/", (req, res) => {
   res.status(200).send({ message: "THIS IS HERE" });
 });
-app.listen(PORT, () => {
-  console.log(`✅ Server is running on port ${PORT}`);
-});
-module.exports = app;
+// app.listen(PORT, () => {
+//   console.log(`✅ Server is running on port ${PORT}`);
+// });
+
+const server = onRequest(app);
+module.exports = { server };

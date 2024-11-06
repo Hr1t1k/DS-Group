@@ -18,6 +18,8 @@ const StateInput = ({ selected, setSelected }) => {
       Authorization: `Bearer ${auth.currentUser?.accessToken}`,
     },
   });
+  console.log(import.meta.env.VITE_DATABASE_URL);
+  console.log(instance);
   const [states, setStates] = useState([]);
 
   useEffect(() => {

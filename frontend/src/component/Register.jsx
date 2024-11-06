@@ -43,7 +43,8 @@ const Register = () => {
               Authorization: `Bearer ${auth.currentUser.accessToken}`,
             },
           });
-
+          console.log(import.meta.env.VITE_DATABASE_URL);
+          console.log(instance);
           instance
             .post("/api/user/", {
               name: username,
