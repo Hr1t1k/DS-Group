@@ -20,5 +20,5 @@ Distribution Logic:
   * Get All available Gift items
   * Get a random number between 0 to Number of gift items-1, (to distribute gift at that index on Gifts Array)
   * Check if that gift can be distributed or not
-    *If not ask user to try again later
-    *Else give the gift to the user, update Gifts Tracking Collection, and Gifts table( reduce available gifts) and return the newly created document to the user
+   *If not ask user to try again later
+   *Else give the gift to the user, update Gifts Tracking Collection, and Gifts table( reduce available gifts) and return the newly created document to the user
