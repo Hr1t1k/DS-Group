@@ -2,6 +2,8 @@
 
 **Live Website Link**: [https://getlucky-f839f.web.app/](https://getlucky-f839f.web.app/)
 
+Tech Stack: React.js, Tailwindcss, Express.js, Node.js, MongoDB, mongoose, Firebase
+
 ## API Routes
 
 | Route                | Description                   | HTTP Method | Parameters                  | Protected |
