@@ -27,4 +27,7 @@ try {
 }
 
 const server = onRequest(app);
+app.listen(port, () => {
+  console.log("Listening on port");
+});
 module.exports = { server };
