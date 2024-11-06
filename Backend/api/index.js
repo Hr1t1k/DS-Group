@@ -1,10 +1,10 @@
 const express = require("express");
 const path = require("path");
-const connectDB = require("./config/dbConfig");
-const userRoutes = require("./routes/userRoute");
-const stateRoutes = require("./routes/stateRoute");
-const giftRoutes = require("./routes/giftRoute");
-const giftTrackingRoutes = require("./routes/giftTrackingRoute");
+const connectDB = require("../config/dbConfig");
+const userRoutes = require("../routes/userRoute");
+const stateRoutes = require("../routes/stateRoute");
+const giftRoutes = require("../routes/giftRoute");
+const giftTrackingRoutes = require("../routes/giftTrackingRoute");
 const { onRequest } = require("firebase-functions/v2/https");
 
 const cors = require("cors");
