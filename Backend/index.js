@@ -15,14 +15,11 @@ app.use(express.json());
 app.use(cors());
 connectDB(); // connect to the database
 
-try {
-  app.use("/api/user", userRoutes);
-  app.use("/api/state", stateRoutes);
-  app.use("/api/gift", giftRoutes);
-  app.use("/api/giftTracking", giftTrackingRoutes);
-} catch (error) {
-  console.log(error);
-}
+app.use("/api/user", userRoutes);
+app.use("/api/state", stateRoutes);
+app.use("/api/gift", giftRoutes);
+app.use("/api/giftTracking", giftTrackingRoutes);
+
 const PORT = 8000;
 app.get("/", (req, res) => {
   res.json(200).send({ message: "THIS IS HERE" });
