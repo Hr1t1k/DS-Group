@@ -1,4 +1,5 @@
 const admin = require("firebase-admin");
+require("dotenv").config();
 
 var serviceAccount = require("./getlucky-f839f-firebase-adminsdk-bluqe-8a5a2943ab.json");
 

@@ -4,8 +4,12 @@
   "description": "Backend for GetMyGift website (DS Group Interview assessment)",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
     "start": "node index.js",
-    "deploy": "firebase deploy --only functions:server"
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
   },
   "engines": {
     "node": "18"
@@ -22,5 +26,11 @@
     "mongoose": "^8.8.0",
     "path": "^0.12.7",
     "short-uuid": "^5.2.0"
-  }
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
 }

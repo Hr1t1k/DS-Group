@@ -1,7 +1,7 @@
 const asyncHandler = require("express-async-handler");
 const GiftTracking = require("../models/giftTrackingModel.js");
 const User = require("../models/userModel.js");
-const { useGift, availableGifts } = require("../controllers/giftController.js");
+const { useGift, availableGifts } = require("./giftController.js");
 
 const short = require("short-uuid");
 
