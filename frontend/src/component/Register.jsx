@@ -80,9 +80,6 @@ const Register = () => {
             theme: "colored",
             autoClose: 1500,
           });
-          setTimeout(() => {
-            navigate("/login");
-          }, 1500);
         } else if (error.code === "auth/weak-password") {
           toast.error("Password should be at least 8 characters.", {
             theme: "colored",

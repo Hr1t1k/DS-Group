@@ -12,7 +12,8 @@ dist
 dist-ssr
 *.local
 .env
-DS Group/Backend/functions/config/getlucky-f839f-firebase-adminsdk-bluqe-8a5a2943ab.json
+getlucky-f839f-firebase-adminsdk-bluqe-4fa1564d89.json
+getlucky-f839f-firebase-adminsdk-bluqe-8a5a2943ab.json
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
